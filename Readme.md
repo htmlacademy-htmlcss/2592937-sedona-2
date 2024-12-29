@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Оськин Сергей](https://up.htmlacademy.ru/htmlcss-individual/2/user/2592937).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
