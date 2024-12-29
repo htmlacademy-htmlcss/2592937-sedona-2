@@ -2,7 +2,7 @@
 
 * Студент: [Оськин Сергей](https://up.htmlacademy.ru/htmlcss-individual/2/user/2592937).
 * Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
-
+* Сайт: [Мой проект "Седона"](https://oskinsergey.github.io/2592937-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
