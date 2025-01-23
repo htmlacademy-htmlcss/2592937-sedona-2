@@ -157,8 +157,10 @@
           <b class="hotels-card-name">Гостиница</b>
           <b class="hotels-card-price">От 4000 ₽</b>
           <a class="button" href="#">Подробнее</a>
-          <button class="button button-blue">В избранное</button>
-          <img class="hotels-stars" src="images/stars-1.svg" width="140" height="37" alt="">
+          <a class="button button-blue">В избранное</button>
+          <div class="rating-container">
+            <img class="hotels-stars" src="images/stars-1.svg" width="140" height="37" alt="">
+          </div>
           <a class="button button-light" href="#">Рейтинг: 8,5</a>
         </li>
         <li class="hotels-card">
@@ -169,8 +171,10 @@
           <b class="hotels-card-name">Гостиница</b>
           <b class="hotels-card-price">От 5000 ₽</b>
           <a class="button" href="#">Подробнее</a>
-          <button class="button button-green">В избранном</button>
-          <img class="hotels-stars" src="images/stars-2.svg" width="140" height="37" alt="">
+          <a class="button button-green">В избранном</button>
+          <div class="rating-container">
+            <img class="hotels-stars" src="images/stars-2.svg" width="140" height="37" alt="">
+          </div>
           <a class="button button-light" href="#">Рейтинг: 9,2</a>
         </li>
         <li class="hotels-card">
@@ -181,8 +185,10 @@
           <b class="hotels-card-name">Гостиница</b>
           <b class="hotels-card-price">От 2500 ₽</b>
           <a class="button" href="#">Подробнее</a>
-          <button class="button button-blue">В избранное</button>
-          <img class="hotels-stars" src="images/stars-3.svg" width="140" height="37" alt="">
+          <a class="button button-blue">В избранное</button>
+          <div class="rating-container">
+            <img class="hotels-stars" src="images/stars-3.svg" width="140" height="37" alt="">
+          </div>
           <a class="button button-light" href="#">Рейтинг: 6,9</a>
         </li>
         <li class="hotels-card">
@@ -193,8 +199,10 @@
           <b class="hotels-card-name">Гостиница</b>
           <b class="hotels-card-price">От 1500 ₽</b>
           <a class="button" href="#">Подробнее</a>
-          <button class="button button-blue">В избранное</button>
-          <img class="hotels-stars" src="images/stars-4.svg" width="140" height="37" alt="Горы на фоне звёздного неба">
+          <a class="button button-blue">В избранное</button>
+          <div class="rating-container">
+            <img class="hotels-stars" src="images/stars-4.svg" width="140" height="37" alt="Горы на фоне звёздного неба">
+          </div>
           <a class="button button-light" href="#">Рейтинг: 5,0</a>
         </li>
       </ul>
@@ -203,19 +211,19 @@
           <a class="pagination-link pagination-link-current">1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link">2</a>
+          <a class="pagination-link" href="#">2</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link">3</a>
+          <a class="pagination-link" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link">4</a>
+          <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-link-any">...</a>
+          <span class="pagination-link pagination-link-any">...</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link">10</a>
+          <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
     </section>
@@ -231,7 +239,6 @@
       <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="subscribe-email">
-          <span class="visually-hidden">Email</span>
         </label>
         <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
         <button class="button subscribe-button" type="submit">Подписаться</button>
