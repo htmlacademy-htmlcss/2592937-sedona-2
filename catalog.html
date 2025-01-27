@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <header class="page-header" data-test="header">
@@ -38,10 +39,11 @@
           </a>
         </li>
       </ul>
-      <a class="header-button" href="#">Хочу сюда!</a>
+      <a class="button header-button" href="#">Хочу сюда!</a>
     </nav>
   </header>
   <main class="main-inner" data-test="main">
+    <div class="filters-container">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -118,6 +120,7 @@
         </div>
       </form>
     </section>
+    </div>
     <section class="catalog" data-test="catalog">
       <h2 class="visually-hidden">Каталог гостиниц</h2>
       <div class="sort-container">
@@ -226,12 +229,6 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
-    </section>
-    <section class="search" data-test="search">
-      <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <p class="lead">Заинтересовались?</p>
-      <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="button" type="button">Поиск гостиницы в Седоне</button>
     </section>
     <section class="subscribe">
       <h2 class="visually-hidden">Рассылка</h2>
