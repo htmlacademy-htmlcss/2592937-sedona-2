@@ -2,7 +2,7 @@
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('/2592937-sedona-2-master/fonts/ptsans-400.woff2') format('woff2');
+    src: url('../fonts/ptsans-400.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    src: url('/2592937-sedona-2-master/fonts/ptsans-700.woff2') format('woff2');
+    src: url('../fonts/ptsans-700.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -78,7 +78,7 @@ p.description {
 }
 
 .hero {
-    background-image: url("/2592937-sedona-2-master/images/index-background.jpg");
+    background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -174,7 +174,7 @@ p.description {
 }
 
 .subscribe-index {
-    background-image: url("/2592937-sedona-2-master/images/subscribe-background.jpg");
+    background-image: url("../images/subscribe-background.jpg");
     background-size: 100% auto;
     background-repeat: repeat;
 }
@@ -192,7 +192,7 @@ p.description {
 }
 
 .filters-container {
-    background-image: url("/2592937-sedona-2-master/images/filters-background.jpg");
+    background-image: url("../images/filters-background.jpg");
     background-size: 100% auto;
     background-repeat: repeat;
     color: #ffffff;
@@ -275,6 +275,10 @@ p.description {
     color: #333333;
     background-color: #F2F2F2;
 
+}
+
+.button-green {
+    background-color: #7DB54F;
 }
 
 .pagination-link {
