@@ -97,6 +97,8 @@
               <label class="range-inputs-label range-inputs-min" for="min">
                 От
               </label>
+            </div>
+            <div class="filters-catalog-range">
               <input class="input" type="text" id="max" value="9000" name="max" placeholder="до">
               <label class="range-inputs-label range-inputs-max" for="max">
                 До
@@ -152,8 +154,10 @@
           </div>
           <a class="button" href="#">Подробнее</a>
           <a class="button button-blue">В избранное</a>
-          <img class="hotels-stars" src="images/stars-1.svg" width="140" height="37" alt="">
-          <a class="button button-light" href="#">Рейтинг: 8,5</a>
+          <div class="hotels-card-image-wrapper">
+            <img src="images/stars-1.svg" width="140" height="37" alt="">
+          </div>
+          <b class="button button-light" href="#">Рейтинг: 8,5</b>
         </li>
         <li class="hotels-card">
           <a class="hotels-card-link" href="#">
@@ -166,8 +170,10 @@
           </div>
           <a class="button" href="#">Подробнее</a>
           <a class="button button-green">В избранном</a>
-          <img class="hotels-stars" src="images/stars-2.svg" width="140" height="37" alt="">
-          <a class="button button-light" href="#">Рейтинг: 9,2</a>
+          <div class="hotels-card-image-wrapper">
+            <img src="images/stars-2.svg" width="140" height="37" alt="">
+          </div>
+          <b class="button button-light" href="#">Рейтинг: 9,2</b>
         </li>
         <li class="hotels-card">
           <a class="hotels-card-link" href="#">
@@ -180,8 +186,10 @@
           </div>
           <a class="button" href="#">Подробнее</a>
           <a class="button button-blue">В избранное</a>
-          <img class="hotels-stars" src="images/stars-3.svg" width="140" height="37" alt="">
-          <a class="button button-light" href="#">Рейтинг: 6,9</a>
+          <div class="hotels-card-image-wrapper">
+            <img src="images/stars-3.svg" width="140" height="37" alt="">
+          </div>
+          <b class="button button-light" href="#">Рейтинг: 6,9</b>
         </li>
         <li class="hotels-card">
           <a class="hotels-card-link" href="#">
@@ -194,8 +202,10 @@
           </div>
           <a class="button" href="#">Подробнее</a>
           <a class="button button-blue">В избранное</a>
-          <img class="hotels-stars" src="images/stars-4.svg" width="140" height="37" alt="Горы на фоне звёздного неба">
-          <a class="button button-light" href="#">Рейтинг: 5,0</a>
+          <div class="hotels-card-image-wrapper">
+            <img src="images/stars-4.svg" width="140" height="37" alt="Горы на фоне звёздного неба">
+          </div>
+          <b class="button button-light" href="#">Рейтинг: 5,0</b>
         </li>
       </ul>
       <ul class="pagination">
@@ -225,9 +235,10 @@
         <p class="lead">Подпишитесь на рассылку</p>
         <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="subscribe-field-label" for="subscribe-email">
-            <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+          <label class="subscribe-field-label" for="subscribe-email" style="visibility: hidden;">
+            Подпишитесь на нашу рассылку
           </label>
+          <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
           <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </div>

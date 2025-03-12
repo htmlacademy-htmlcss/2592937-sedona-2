@@ -45,7 +45,9 @@
   <main class="main-container" data-test="main">
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden" hidden>Седона - городок в Аризоне</h1>
-      <img class="hero-img" src="images/welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Great Canyon sucks!">
+      <div class="hero-container">
+        <img class="hero-img" src="images/welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Great Canyon sucks!">
+      </div>
     </section>
     <section class="advantages" data-test="advantages">
       <h2 class="visually-hidden" hidden>Преимущества</h2>
@@ -114,7 +116,7 @@
       <h2 class="visually-hidden" hidden>Поиск гостиницы</h2>
       <p class="lead">Заинтересовались?</p>
       <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
+      <a class="button button-search" type="button">Поиск гостиницы в Седоне</a>
     </section>
     <section class="subscribe subscribe-index" data-test="subscribe">
       <div class="subscribe-container">
@@ -122,10 +124,10 @@
         <p class="lead">Подпишитесь на рассылку</p>
         <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="subscribe-field-label" for="subscribe-email">
-            <span class="visually-hidden" hidden>Email</span>
-            <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+          <label class="subscribe-field-label" for="subscribe-email" style="visibility: hidden;">
+            Подпишитесь на нашу рассылку
           </label>
+          <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
           <button class="button subscribe-button" type="submit">Подписаться</button>
       </form>
       </div>
