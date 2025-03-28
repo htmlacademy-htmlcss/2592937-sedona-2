@@ -45,7 +45,9 @@
   <main class="main-container" data-test="main">
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden" hidden>Седона - городок в Аризоне</h1>
-      <img class="hero-img" src="images/welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Great Canyon sucks!">
+      <div class="hero-container">
+        <img class="hero-img" src="images/welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Great Canyon sucks!">
+      </div>
     </section>
     <section class="advantages" data-test="advantages">
       <h2 class="visually-hidden" hidden>Преимущества</h2>
@@ -77,7 +79,7 @@
         </li>
         <li class="advantages-item-full advantages-item-full-reverse">
           <div class="advantages-container">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
+            <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
           <div class="advantages-img-container">
@@ -94,27 +96,27 @@
       </div>
       <ul class="services-list">
         <li class="services-item">
-          <img class="services-img" src="images/housing.svg" width="75" height="72" alt="Дом">
+          <img class="services-img services-img-housing" src="images/housing.svg" width="75" height="72" alt="Дом">
           <h3 class="services-title">Жильё</h3>
-          <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <p class="services-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
         </li>
         <li class="services-item">
-          <img class="services-img" src="images/food.svg" width="74" height="70" alt="Бургер">
+          <img class="services-img services-img-food" src="images/food.svg" width="74" height="70" alt="Бургер">
           <h3 class="services-title">Еда</h3>
-          <p class="services-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
         </li>
         <li class="services-item">
-          <img class="services-img" src="images/gift.svg" width="64" height="76" alt="Подарок">
+          <img class="services-img services-img-gift" src="images/gift.svg" width="64" height="75" alt="Подарок">
           <h3 class="services-title">Сувениры</h3>
-          <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
+          <p class="services-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
         </li>
       </ul>
     </section>
     <section class="search" data-test="search">
       <h2 class="visually-hidden" hidden>Поиск гостиницы</h2>
       <p class="lead">Заинтересовались?</p>
-      <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
+      <p class="description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="button button-search" type="button">Поиск гостиницы в Седоне</a>
     </section>
     <section class="subscribe subscribe-index" data-test="subscribe">
       <div class="subscribe-container">
@@ -122,10 +124,10 @@
         <p class="lead">Подпишитесь на рассылку</p>
         <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="subscribe-field-label" for="subscribe-email">
-            <span class="visually-hidden" hidden>Email</span>
-            <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+          <label class="subscribe-field-label" for="subscribe-email" style="visibility: hidden;">
+            Подпишитесь на нашу рассылку
           </label>
+          <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
           <button class="button subscribe-button" type="submit">Подписаться</button>
       </form>
       </div>
