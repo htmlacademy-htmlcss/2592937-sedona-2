@@ -20,7 +20,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -28,13 +28,17 @@
         <ul class="navigation-user-list">
           <li class="navigation-item">
             <a class="navigation-user-link navigation-user-link-search" href="#">
-              <img class="navigation-user-img" src="images/search.svg" width="20" height="20" alt="">
+              <svg class="navigation-user-img" aria-hidden="true" aria-label="Поиск" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                <path fill="#000" d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/>
+              </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-user-link navigation-user-link-favorite">
-              <img class="navigation-user-img" src="images/like.svg" width="20" height="20" alt="">
+              <svg class="navigation-user-img" aria-hidden="true" aria-label="Избранное" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
+                <path fill="#000" d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+              </svg>
               <span class="visually-hidden">Мне нравится</span>
               <span class="navigation-favorite-count">12</span>
             </a>
@@ -50,7 +54,12 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
-                <img src="images/home-icon.svg" width="12" height="12" alt="Иконка домика">
+                <span class="icon-home"></span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">
+                <span class="icon"></span>
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -93,17 +102,27 @@
             </fieldset>
             <fieldset class="filters-catalog-group filters-catalog-group-price">
               <legend class="filters-catalog-title">Стоимость, ₽:</legend>
-              <div class="filters-catalog-range">
-                <input class="input input-left" type="text" id="min" value="0" name="min" placeholder="от">
-                <label class="range-inputs-label range-inputs-min" for="min">
-                  от
+              <div class="range-inputs-wrapper">
+                <label class="range-inputs-label" for="min">
+                  <input class="input input-left" type="number" id="min" value="0" name="min" placeholder="от">
+                  <span class="label-text">от</span>
+                </label>
+                <label class="range-inputs-label" for="max">
+                  <input class="input input-right" type="number" id="max" value="9000" name="max" placeholder="до">
+                  <span class="label-text">до</span>
                 </label>
               </div>
-              <div class="filters-catalog-range">
-                <input class="input input-right" type="text" id="max" value="9000" name="max" placeholder="до">
-                <label class="range-inputs-label range-inputs-max" for="max">
-                  до
-                </label>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </fieldset>
             <div class="filters-button-container">
@@ -123,21 +142,24 @@
             <option value="expensive">Сначала дорогие</option>
           </select>
           <ul class="sort-list">
-            <li class="sort-item active">
+            <li class="sort-item active" tabindex="0">
               <a class="sort-button" href="catalog.html?view=tile">
-                <img class="sort-img" src="images/view-1.svg" width="16" height="14" alt="">
+                <svg class="sort-img" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
+                </svg>
                 <span class="visually-hidden">Отобразить в виде плитки</span>
               </a>
             </li>
-            <li class="sort-item">
+            <li class="sort-item" tabindex="0">
               <a class="sort-button" href="catalog.html?view=card">
-                <img class="sort-img" src="images/view-2.svg" width="16" height="14" alt="">
+                <svg class="sort-img" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
+                </svg>
                 <span class="visually-hidden">Отообразить карточки</span>
               </a>
             </li>
-            <li class="sort-item">
+            <li class="sort-item" tabindex="0">
               <a class="sort-button" href="catalog.html?view=list">
-                <img class="sort-img" src="images/view-3.svg" width="16" height="14" alt="">
+                <svg class="sort-img" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
+                </svg>
                 <span class="visually-hidden">Отобразить список</span>
               </a>
             </li>
@@ -251,20 +273,17 @@
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="social" href="#">
-                <img class="social-img" src="images/vk.svg" width="24" height="14" alt="">
+              <a class="footer-social-link footer-social-vk" href="#" aria-label="Вконтакте">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social" href="#">
-                <img class="social-img" src="images/telegram.svg" width="18" height="16" alt="">
+              <a class="footer-social-link footer-social-tg" href="#" aria-label="Телеграм">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social" href="#">
-                <img class="social-img" src="images/youtube.svg" width="22" height="17" alt="">
+              <a class="footer-social-link footer-social-yt" href="#" aria-label="Ютуб">
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
@@ -277,8 +296,7 @@
         <section class="footer-publicher">
           <h2 class="visually-hidden">Сделано в html academy</h2>
           <p class="footer-publicher-link">
-            <a class="footer-publicher-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="images/logo-footer.svg" width="115" height="33" alt="Логотип «html academy»">
+            <a class="footer-publicher-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на курс HTML и CSS от HTML Academy">
             </a>
           </p>
         </section>
