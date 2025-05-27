@@ -107,6 +107,7 @@ body {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    color: #333333;
 }
 
 .page-header {
@@ -263,6 +264,7 @@ body {
     padding: 0;
     padding-bottom: 30px;
     margin-bottom: 30px;
+    color: #000000;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -284,6 +286,10 @@ body {
     background-color: #000000;
     opacity: 0.3;
     bottom: 0;
+}
+
+.advantages-item-full .advantages-title {
+    color: #FFFFFF;
 }
 
 .advantages .lead {
@@ -335,7 +341,7 @@ body {
     flex-direction: column;
     background-color: #83B3D31F;
     padding: 113px 85px;
-    color: #000000;
+    color: #333333;
 }
 
 .advantages-item:nth-last-of-type(odd) {
