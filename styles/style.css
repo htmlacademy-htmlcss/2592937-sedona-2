@@ -254,6 +254,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .hero-img {
@@ -310,7 +311,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     list-style-type: none;
 }
@@ -361,6 +361,8 @@ body {
 
 .advantages-img {
     display: block;
+    object-fit: cover;
+    height: 100%;
 }
 
 .services-description-container {
@@ -462,6 +464,7 @@ body {
     background-color: #82B3D3;
     max-width: 232px;
     border-radius: 0 4px 4px 0;
+    cursor: pointer;
 }
 
 .subscribe-button:hover {
@@ -515,15 +518,31 @@ body {
 }
 
 .breadcrumbs {
-    width: 114px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 28px;
     align-items: center;
     margin: 0;
     padding: 0;
     margin-top: 8px;
     list-style-type: none;
+}
+
+.breadcrumbs-item {
+    position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    content: "";
+    background: url(../images/arrow.svg) no-repeat;
+    background-size: contain;
+    width: 8px;
+    height: 20px;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    right: -24px;
+    top: -5px;
 }
 
 .breadcrumbs-link {
@@ -553,8 +572,10 @@ body {
 .icon-home {
     background: url("../images/home-icon.svg") no-repeat;
     background-size: contain;
+    position: relative;
     width: 13px;
     height: 15px;
+    top: 13px;
     margin-right: 10px;
 }
 
@@ -668,9 +689,8 @@ body {
 }
 
 .input:focus {
-    outline: none;
+    outline: 3px solid #83B3D3;
     background-color: #E5E5E5;
-    border: 3px solid #83B3D3;
 }
 
 .input[type="number"]::-webkit-outer-spin-button,
@@ -749,7 +769,7 @@ body {
 
 .control-input:checked + span::before {
     background-color: #FFFFFF;
-    background-image: url("/images/checkbox.svg");
+    background-image: url("../images/checkbox.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 12px 10px;
@@ -810,6 +830,7 @@ body {
     padding: 8px 50px;
     margin-bottom: 38px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .filters-button:hover {
@@ -887,8 +908,7 @@ body {
 }
 
 .sort-button:focus {
-    outline: none;
-    border: #68A2CA 2px solid;
+    outline: #68A2CA 2px solid;
 }
 
 .sort-img {
@@ -907,8 +927,9 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    align-items: start;
 }
 
 .hotels-card {
@@ -961,6 +982,7 @@ body {
 
 .button-blue {
     background-color: #82B3D3;
+    cursor: pointer;
 }
 
 .button-blue:hover {
@@ -1020,6 +1042,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin-top: 80px;
     margin-bottom: 60px;
@@ -1073,6 +1096,10 @@ body {
 .pagination-link-any {
     color: #000000;
     background-color: #FFFFFF;
+}
+
+.pagination-link-any:active {
+    opacity: 1;
 }
 
 .pagination-link-any:hover {
