@@ -972,6 +972,24 @@ body {
     display: flex;
 }
 
+.four-stars{
+    background-image: url(../images/stars-2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.three-stars{
+    background-image: url(../images/stars-3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.two-stars {
+    background-image: url(../images/stars-4.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .hotels-card-image {
     display: block;
     align-items: center;
