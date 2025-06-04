@@ -14,7 +14,9 @@
     font-display: swap;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -58,7 +60,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 140px;
     padding: 8px;
     font-size: 16px;
     line-height: 20px;
@@ -170,6 +171,10 @@ body {
     min-height: 20px;
 }
 
+.navigation-user-link:active {
+    opacity: 0.6;
+}
+
 .navigation-user-link-favorite {
     position: relative;
 }
@@ -197,6 +202,10 @@ body {
     line-height: 24px;
     color: #000000;
     text-decoration: none;
+}
+
+.navigation-link:active {
+    opacity: 0.6;
 }
 
 .navigation-link-current::before {
@@ -235,6 +244,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #DEEBF4;
 }
 
 .hero::after {
@@ -450,6 +460,7 @@ body {
     background-image: url("../images/subscribe-background.jpg");
     background-size: cover;
     background-repeat: repeat;
+    background-color: #3F79A9;
 }
 
 .subscribe-index .lead {
@@ -501,8 +512,9 @@ body {
     background-image: url("../images/filters-background.jpg");
     background-size: cover;
     background-repeat: repeat;
+    background-color: #706C6D;
     color: #FFFFFF;
-    padding: 35px 0 70px 0;
+    padding: 35px 0 65px 0;
 }
 
 .inner-header {
@@ -584,7 +596,6 @@ body {
 
 .filters-catalog {
     display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     gap: 70px;
 }
@@ -599,10 +610,11 @@ body {
 .filters-catalog-group-price {
     width: 288px;
     gap: 20px;
+    margin-left: auto;
 }
 
 .range {
-    margin-top: 36px;
+    margin-top: 26px;
 }
 
 .range-scale {
@@ -633,6 +645,10 @@ body {
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
+}
+
+.range-toggle:active {
+    opacity: 0.6;
 }
 
 .toggle-min {
@@ -855,7 +871,7 @@ body {
 
 .sort-container {
     display: flex;
-    margin: 50px 0 40px 0;
+    margin: 50px 0 32px 0;
 }
 
 .sort-container .lead {
@@ -1161,7 +1177,7 @@ body {
 }
 
 .footer-contacts-phone {
-    width: 331px;
+
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 40px;
@@ -1185,6 +1201,7 @@ body {
 }
 
 .footer-publicher-logo {
+    padding-top: 5px;
     display: block;
     width: 115px;
     height: 33px;
