@@ -785,6 +785,14 @@ body {
     outline: 3px solid #83B3D3;
 }
 
+.control-input:checked + span::before {
+    background-color: #FFFFFF;
+    background-image: url("../images/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 10px;
+}
+
 .control-input[type="radio"] + span::before {
     border-radius: 50%;
 }
